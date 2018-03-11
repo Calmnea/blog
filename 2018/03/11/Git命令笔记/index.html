@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Git,笔记," />
 
 
 
@@ -94,13 +94,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="大头同学">
-<meta property="og:url" content="https://calmnea.github.io/index.html">
+<meta name="description" content="日常使用Git时经常记不住相关操作，故将常用的命令记录以便翻查 基本操作 git init 初始化仓库 git clone [url] 克隆远程仓库到本地 git add [file] 添加指定文件到缓存区 git add . 添加所有文件到缓存区 git status 查看仓库当前状态 git diff 对比缓存器与工作区的差异 git pull [remote] [branch] 拉取远程仓库">
+<meta name="keywords" content="Git,笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git命令笔记">
+<meta property="og:url" content="https://calmnea.github.io/2018/03/11/Git命令笔记/index.html">
 <meta property="og:site_name" content="大头同学">
+<meta property="og:description" content="日常使用Git时经常记不住相关操作，故将常用的命令记录以便翻查 基本操作 git init 初始化仓库 git clone [url] 克隆远程仓库到本地 git add [file] 添加指定文件到缓存区 git add . 添加所有文件到缓存区 git status 查看仓库当前状态 git diff 对比缓存器与工作区的差异 git pull [remote] [branch] 拉取远程仓库">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-11T14:48:47.604Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="大头同学">
+<meta name="twitter:title" content="Git命令笔记">
+<meta name="twitter:description" content="日常使用Git时经常记不住相关操作，故将常用的命令记录以便翻查 基本操作 git init 初始化仓库 git clone [url] 克隆远程仓库到本地 git add [file] 添加指定文件到缓存区 git add . 添加所有文件到缓存区 git status 查看仓库当前状态 git diff 对比缓存器与工作区的差异 git pull [remote] [branch] 拉取远程仓库">
 
 
 
@@ -129,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="https://calmnea.github.io/"/>
+  <link rel="canonical" href="https://calmnea.github.io/2018/03/11/Git命令笔记/"/>
 
 
 
 
 
-  <title>大头同学</title>
+  <title>Git命令笔记 | 大头同学</title>
   
 
 
@@ -160,9 +165,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -255,9 +258,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -287,9 +290,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/11/Git命令笔记/" itemprop="url">Git命令笔记</a></h1>
+          <h1 class="post-title" itemprop="name headline">Git命令笔记</h1>
         
 
         <div class="post-meta">
@@ -361,9 +362,7 @@
       
 
       
-        
-          
-            <p>日常使用Git时经常记不住相关操作，故将常用的命令记录以便翻查</p>
+        <p>日常使用Git时经常记不住相关操作，故将常用的命令记录以便翻查</p>
 <h2 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h2><ul>
 <li><strong><code>git init</code></strong> 初始化仓库</li>
 <li><strong><code>git clone [url]</code></strong> 克隆远程仓库到本地</li>
@@ -414,8 +413,6 @@
 <li>强制pull远程仓库覆盖本地文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git fetch --all</span><br><span class="line">git reset --hard origin/master</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure></li>
 </ul>
 
-          
-        
       
     </div>
     
@@ -430,14 +427,22 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Git/" rel="tag"># Git</a>
+          
+            <a href="/tags/笔记/" rel="tag"># 笔记</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -447,10 +452,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -458,6 +464,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -478,8 +488,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -541,6 +560,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本操作"><span class="nav-number">1.</span> <span class="nav-text">基本操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分支"><span class="nav-number">2.</span> <span class="nav-text">分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#日志"><span class="nav-number">3.</span> <span class="nav-text">日志</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#远程仓库"><span class="nav-number">4.</span> <span class="nav-text">远程仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#还原"><span class="nav-number">5.</span> <span class="nav-text">还原</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用组合命令"><span class="nav-number">6.</span> <span class="nav-text">常用组合命令</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -661,10 +696,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
